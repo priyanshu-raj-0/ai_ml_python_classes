@@ -1,0 +1,9 @@
+variable, how to naming the variable, integers, floats, in integers and floats we can perform mathematical operations. 
+
+Types of data structure
+1). lists
+2). Dictionaries
+3). Tupples
+4). Sets
+
+function 
