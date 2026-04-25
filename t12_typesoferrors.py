@@ -106,7 +106,7 @@ finally:
 
 # ex:-
 try:
-    file = open('data.txt', 'r')
+    file = open('data.txt', 'r')    # First create data.txt then run this code.
     data = file.read()
 except FileNotFoundError:
     print("File not found")
