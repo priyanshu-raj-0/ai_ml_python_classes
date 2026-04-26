@@ -22,3 +22,5 @@ shopping_cart = [
     },
 ]
 print(calculate_total(shopping_cart))
+
+
