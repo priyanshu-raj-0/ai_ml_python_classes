@@ -1,4 +1,3 @@
-
 # first we have to create .env file.
 
 
@@ -50,15 +49,16 @@ print(f"Database: {database_url}")
 # ----------------------------------------------------------------------------------------
 
 # app.py
-from dotenv import load_dotenv
-import os
-import requests
+
 
 # Load environment variables
 load_dotenv()
 
+# if .env folder in not in root or it is available inside another folder then load_dotenv() couldn't find it. so then we have to specified the path of the .env file.
+# load_dotenv("../data/input/")
+
 # Get API key
-API_KEY = os.environ.get('OPENAI_API_KEY')
+API_KEY = os.environ.get("OPENAI_API_KEY")
 
 if not API_KEY:
     print("Please set OPENAI_API_KEY in .env file")
