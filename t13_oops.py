@@ -208,6 +208,8 @@ class TextModel(BaseModel):
 
 
 newBaseModel = BaseModel("gpt-3.5-turbo")
+newBaseModel.model_name  # newBaseModel is instance of the class BaseModel
+newBaseModel.is_loaded
 newBaseModel.load()
 
 newTextModel = TextModel(newBaseModel.model_name, 10)
@@ -253,7 +255,7 @@ TextToBeProcessed = TextProcessor("      Hello, world..     ")
 result = TextToBeProcessed.clean_text().remove_punctuation().text
 
 # OR
-# result = TextToBeProcessed.clean_text().remove_punctuation()
+# result = TextToBeProcessed.clean_text().remove_punctuation()    # here the result is a instance of the class TextProcessor
 # result.text
 
 
